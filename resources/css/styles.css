@@ -5,10 +5,31 @@
   box-sizing: border-box;
 }
 
+.btn {
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+}
+
+.btn-light {
+  color: var(--color-black);
+  border: 1.5px solid var(--color-black);
+}
+
 /* CSS VARIABLES */
 :root {
   --color-black: #000;
   --color-white: #fff;
+  --color-dark-grey: #555;
+  --color-dark-mid-grey: #818181;
+  --color-dark-light-grey: #b0b0b0;
 }
 
 html {
@@ -21,4 +42,87 @@ body {
   font-weight: 400;
   color: var(--color-black);
   background-color: var(--color-white);
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 320px) {
+  .mobile-nav {
+    padding: 0.9rem 1.2rem;
+    background-color: var(--color-black);
+  }
+
+  .mobile-nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-logo {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .section-hero {
+    max-width: 100%;
+    margin: 0 1.2rem;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    padding: 1.5rem 0rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0.8rem;
+  }
+
+  .hero-text h3 {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .hero-text span {
+    color: var(--color-dark-grey);
+  }
+
+  .hero-action-button {
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0rem;
+  }
+
+  .hero-image {
+    border: 1px solid var(--color-dark-mid-grey);
+    border-radius: 50%;
+    width: 150px; /* Same width and height = perfect circle */
+    height: 150px;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* center the image inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image-photo {
+    width: 90%; /* Image fills the circle */
+    height: auto;
+    display: block;
+    border-radius: 50%;
+  }
 }
