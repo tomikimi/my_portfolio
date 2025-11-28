@@ -64,10 +64,12 @@ body {
     font-weight: 400;
   }
 
-  .section-hero {
+  section {
     max-width: 100%;
-    margin: 0 1.2rem;
+    margin: 1.5rem 1.2rem;
   }
+
+  /* HERO SECTION STYLE */
 
   .hero-container {
     display: flex;
@@ -111,7 +113,8 @@ body {
     height: 150px;
     overflow: hidden;
     padding: 20px;
-    box-sizing: border-box;
+
+    box-sizing: border-box; /* This makes padding INCLUDED inside the width/height, so the circle stays perfect. */
 
     /* center the image inside */
     display: flex;
@@ -124,5 +127,101 @@ body {
     height: auto;
     display: block;
     border-radius: 50%;
+  }
+
+  /* PROJECT SECTION STYLE */
+  .project-container {
+    padding: 1rem 0rem;
+  }
+
+  .project-container > h2 {
+    position: relative;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .project-container > h2::after {
+    content: "";
+    position: absolute;
+    width: 15rem;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1.2px solid var(--color-black);
+  }
+
+  .project-container > h2 span {
+    color: var(--color-dark-light-grey);
+    font-size: 2.2rem;
+  }
+
+  .project-list {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    padding: 1.05rem 0rem 1.05rem 0.9rem;
+  }
+
+  .project-list::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 18rem;
+    border-left: 1.2px solid var(--color-black);
+  }
+
+  .project-list > li {
+    font-size: 1rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.5rem 0.9rem;
+    border-radius: 2rem;
+  }
+  .project-list > li:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+
+  /* SKILLS SECTION STYLE */
+  .skills-container {
+    padding: 1rem 0rem;
+  }
+
+  .skills-container > h2 {
+    position: relative;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .skills-container > h2::after {
+    content: "";
+    position: absolute;
+    width: 15rem;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1.2px solid var(--color-black);
+  }
+
+  .skills-container > h2 span {
+    color: var(--color-dark-light-grey);
+    font-size: 2.2rem;
+  }
+
+  .skills-segment {
+    margin: 1.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .skills-block h3 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
   }
 }
