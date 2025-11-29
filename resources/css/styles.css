@@ -50,6 +50,10 @@ body {
   background-color: var(--color-black);
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .mobile-nav-logo {
   display: flex;
   justify-content: space-between;
@@ -345,6 +349,10 @@ section {
 
 /* DESKTOP STYLES */
 @media only screen and (min-width: 900px) {
+  section {
+    margin: 1.5rem 4rem;
+  }
+
   .project-list > li {
     flex-basis: 30%;
   }
@@ -396,5 +404,43 @@ section {
 
   .footer-copyright {
     font-size: 1.2rem;
+  }
+
+  footer {
+    margin: 0rem 3rem;
+  }
+}
+
+/* DESKTOP LARGE SCREEN STYLES */
+@media only screen and (min-width: 1200px) {
+  section {
+    margin: 1.5rem 4rem;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .hero-text {
+    flex-basis: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  footer {
+    margin: 0rem 3rem;
   }
 }
