@@ -342,3 +342,59 @@ section {
     flex-basis: 40%;
   }
 }
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 900px) {
+  .project-list > li {
+    flex-basis: 30%;
+  }
+
+  .skills-segment {
+    flex-direction: row;
+  }
+
+  .skills-block {
+    flex-basis: 30%;
+  }
+
+  .skills-block > h3 {
+    font-size: 1.5rem;
+  }
+
+  .skills-list {
+    font-size: 1.2rem;
+  }
+
+  .skills-list > li:not(:last-of-type) {
+    margin-bottom: 0.4rem;
+  }
+
+  .header-2-style {
+    font-size: 2rem;
+  }
+
+  .header-2-style::after {
+    width: 21rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-site-link {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-contact-request p {
+    font-size: 2rem;
+  }
+
+  .footer-copyright {
+    font-size: 1.2rem;
+  }
+}
