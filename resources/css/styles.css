@@ -34,6 +34,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +51,27 @@ body {
   background-color: var(--color-black);
 }
 
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.mobile-nav-links > li a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.mobile-link-open {
+  display: block;
+}
+
+.mobile-link-hide {
+  display: none;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -58,6 +80,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.mobile-nav-logo > #close-icon {
+  display: none;
 }
 
 .mobile-logo {

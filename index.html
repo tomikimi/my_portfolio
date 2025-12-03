@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./resources/css/styles.css" />
+
     <title>Tomikimi Ogoli | Portfolio Site</title>
   </head>
   <body>
@@ -20,10 +21,10 @@
         <div class="desktop-nav-container">
           <a href="#" class="mobile-logo">TomikimiOGOLI</a>
           <ul class="desktop-link-container">
-            <li><a href="">Home</a></li>
-            <li><a href="">Project & Skills</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#Projects">Project & Skills</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -33,16 +34,30 @@
         <div class="mobile-nav-logo">
           <a href="#" class="mobile-logo">TomikimiOGOLI</a>
           <img
+            id="hamburger-icon"
             src="./resources/images/hamburger-menu-30.png"
             alt="hamburger-icon"
           />
+          <img
+            id="close-icon"
+            src="./resources/images/close-24.png"
+            alt="close-icon"
+          />
+        </div>
+        <div id="mobile-link" class="mobile-link-hide">
+          <ul class="mobile-nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#Projects">Project & Skills</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
         </div>
       </nav>
       <!-- END MOBILE NAV -->
     </header>
     <!-- END HEADER  -->
     <!-- BEGIN HERO SECTION -->
-    <section>
+    <section id="Home">
       <div class="hero-container">
         <div class="hero-text">
           <p>Hello, I am Tomikimi 👋🏽</p>
@@ -55,8 +70,9 @@
           </h3>
 
           <div class="hero-action-button">
-            <a href="#" class="btn btn-dark" aria-label="Say Hi">Say Hi 👋🏽</a
-            ><a href="#" class="btn btn-light" aria-label="My works"
+            <a href="./contact.html" class="btn btn-dark" aria-label="Say Hi"
+              >Say Hi 👋🏽</a
+            ><a href="#Projects" class="btn btn-light" aria-label="My works"
               >Browse Works...</a
             >
           </div>
@@ -72,7 +88,7 @@
     </section>
     <!-- END HERO SECTION -->
     <!-- BEGIN UPCOMING PROJECTS SECTION -->
-    <section>
+    <section id="Projects">
       <div class="project-container">
         <h2 class="header-2-style">Upcoming Projects<span>.</span></h2>
         <ul class="project-list">
@@ -87,7 +103,7 @@
     </section>
     <!-- END PROJECTS SECTION -->
     <!-- BEGIN SKILL SECTION -->
-    <section>
+    <section id="Skills">
       <div class="skills-container">
         <h2 class="header-2-style">Skills<span>.</span></h2>
         <div class="skills-segment">
@@ -122,7 +138,7 @@
     </section>
     <!-- END SKILL SECTION -->
     <!-- BEGIN ABOUT SECTION -->
-    <section>
+    <section id="About">
       <div class="about-container">
         <h2 class="header-2-style">About Me<span>.</span></h2>
         <p>
@@ -167,10 +183,10 @@
     <footer>
       <div class="footer-links">
         <ul class="footer-site-link">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Project & Skills</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#Projects">Project & Skills</a></li>
+          <li><a href="#About">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
         <ul class="footer-social-link">
           <li>
@@ -190,8 +206,9 @@
       <div class="footer-contact-request">
         <p>Interested in working together ?</p>
         <div class="hero-action-button">
-          <a href="#" class="btn btn-dark" aria-label="Say Hi">Say Hi 👋🏽</a
-          ><a href="#" class="btn btn-light" aria-label="My works"
+          <a href="./contact.html" class="btn btn-dark" aria-label="Say Hi"
+            >Say Hi 👋🏽</a
+          ><a href="#Projects" class="btn btn-light" aria-label="My works"
             >Browse Works...</a
           >
         </div>
@@ -202,5 +219,6 @@
       </div>
     </footer>
     <!-- END FOOTER SECTION -->
+    <script src="./script.js"></script>
   </body>
 </html>
